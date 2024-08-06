@@ -1,0 +1,29 @@
+use song;
+create table Sign_Up(User_Id int primary key auto_increment,User_Name varchar(30) not null,Email_Id varchar(30) not null,Mobile_No varchar(10) not null,Pass_Word varchar(15));
+create table Songs(Song_Id int primary key auto_increment,Song_Name varchar(35),Genre varchar(30),Artist varchar(30),Duration float,ReleaseDate date,Album varchar(20),SongSource varchar(100));
+show tables;
+
+insert into songs (Song_Name,Genre,Artist,Duration,ReleaseDate,Album,SongSource) values ('Lut_Gaye','Romantic','Jubin_Nautiyal',3.48,'2021-03-20','Lut_Gaye','mp3')
+insert into songs (Song_Name,Genre,Artist,Duration,ReleaseDate,Album,SongSource) values ('Backbone','Romantic','Hardhi_Sindhu',3.29,'2017-01-06','Backbone','mp3')
+insert into songs (Song_Name,Genre,Artist,Duration,ReleaseDate,Album,SongSource) values ('Maahi','Romantic','Toshir_Sabri',5.29,'2009-01-23','Raaz_2','mp3')
+CREATE TABLE PodCast(Podcast_Id varchar(30),Episod_Id varchar(30),Podcast_Name varchar(30),Episod_Name varchar(30),Celebrity varchar(25),Duration varchar(15),releaeDate date,songSource varchar(200), primary key(Podcast_Id,Episod_Id));
+desc Podcast;
+insert into PodCast(Podcast_Id,Episod_Id,Podcast_Name,Episod_Name,Celebrity,Duration,releaeDate,songSource)
+   values ('P001','Episode1','Raees','Udi Udi Jaye','Sukhwinder Singh','2:30','2017-01-12','mp3 song'),
+          ('P001','Episode2','Raees','Dhingana','Mikka Singh','4:07','2017-01-23','mp3 song')
+   select * from podcast;
+
+
+   <<<<<<<<<<<    PlayList table >>>>>>>>>>>>>>
+   CREATE TABLE Playlist(
+      			Playlist_Id int primary key auto_increment,
+      			PlaylistName varchar(30),
+      			User_id int,foreign key(User_id) references sign_up(User_Id));
+
+ <<<<<<<<<<<<       PlayListDetail      >>>>>>>>>>>>>
+CREATE TABLE PlaylistDetail(
+		Detail_Id int primary key auto_increment,
+		Playlist_Id int,
+        SongIdOrPostcast_Id varchar(30),
+        SongTypes varchar(30),
+        foreign key(Playlist_Id) references Playlist(Playlist_Id))
