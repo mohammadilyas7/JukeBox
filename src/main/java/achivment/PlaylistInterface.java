@@ -1,4 +1,4 @@
-package achivment;
+package main.java.achivment;
 
 import SongDAOException.SongException;
 import model.PlaList;

@@ -1,4 +1,4 @@
-package SongDAOException;
+package main.java.SongDAOException;
 
 import java.sql.SQLException;
 

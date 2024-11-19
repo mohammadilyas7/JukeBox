@@ -1,4 +1,4 @@
-package songConnection;
+package main.java.songConnection;
 
 import SongDAOException.SongException;
 

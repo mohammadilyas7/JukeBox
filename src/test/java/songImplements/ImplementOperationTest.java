@@ -1,4 +1,4 @@
-package songImplements;
+package main.java.songImplements;
 
 import org.junit.jupiter.api.Test;
 
