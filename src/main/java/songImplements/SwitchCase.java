@@ -1,7 +1,7 @@
 package main.java.songImplements;
 
-import SongDAOException.SongException;
-import model.PodCast;
+import main.java.SongDAOException.SongException;
+import main.java.model.PodCast;
 import model.Song;
 import songConnection.SongConnection;
 

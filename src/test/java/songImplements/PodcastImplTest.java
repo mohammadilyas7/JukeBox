@@ -1,6 +1,6 @@
 package main.java.songImplements;
 
-import model.PodCast;
+import main.java.model.PodCast;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 

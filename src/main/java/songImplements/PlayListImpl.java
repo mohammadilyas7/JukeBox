@@ -1,9 +1,9 @@
 package main.java.songImplements;
-import SongDAOException.SongException;
+import main.java.SongDAOException.SongException;
 import achivment.PlaylistInterface;
 import model.PlaList;
 import model.PlaylistDetail;
-import model.PodCast;
+import main.java.model.PodCast;
 import model.Song;
 
 import java.sql.PreparedStatement;

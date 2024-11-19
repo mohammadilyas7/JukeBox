@@ -1,6 +1,6 @@
 package main.java.achivment;
 
-import SongDAOException.SongException;
+import main.java.SongDAOException.SongException;
 import model.PlaylistDetail;
 
 import java.sql.SQLException;

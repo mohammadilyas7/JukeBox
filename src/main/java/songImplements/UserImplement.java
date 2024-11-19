@@ -1,8 +1,8 @@
 package main.java.songImplements;
 
-import SongDAOException.SongException;
+import main.java.SongDAOException.SongException;
 import achivment.UserAchivment;
-import model.PodCast;
+import main.java.model.PodCast;
 import model.Song;
 
 import java.sql.*;

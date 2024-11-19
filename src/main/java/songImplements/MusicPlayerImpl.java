@@ -1,7 +1,7 @@
 package main.java.songImplements;
-import SongDAOException.SongException;
-import achivment.MusicPlayerInterface;
-import model.PodCast;
+import main.java.SongDAOException.SongException;
+import main.java.achivment.MusicPlayerInterface;
+import main.java.model.PodCast;
 
 import javax.sound.sampled.*;
 import java.io.File;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import static songConnection.SongConnection.getconnetion;
+import static main.java.songConnection.SongConnection.getconnetion;
     public class MusicPlayerImpl implements MusicPlayerInterface
     {
         Scanner scan = new Scanner(System.in);

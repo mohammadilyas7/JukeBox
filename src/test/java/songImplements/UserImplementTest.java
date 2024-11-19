@@ -1,6 +1,6 @@
 package main.java.songImplements;
 
-import SongDAOException.SongException;
+import main.java.SongDAOException.SongException;
 import model.Song;
 import org.junit.jupiter.api.Test;
 

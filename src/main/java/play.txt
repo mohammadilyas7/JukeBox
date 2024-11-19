@@ -1,5 +1,5 @@
 package main.java.songImplements;
-import SongDAOException.SongException;
+import main.java.SongDAOException.SongException;
 
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;

@@ -1,9 +1,14 @@
 package main.java.songImplements;
-import SongDAOException.SongException;
-import achivment.SongOperation;
-import model.PodCast;
-import model.Song;
-import songConnection.SongConnection;
+//import main.java.SongDAOException.SongException;
+//import achivment.SongOperation;
+//import main.java.model.PodCast;
+//import model.Song;
+//import songConnection.SongConnection;
+
+import main.java.SongDAOException.SongException;
+import main.java.achivment.SongOperation;
+import main.java.model.PodCast;
+import main.java.songConnection.SongConnection;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,7 +18,8 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-import static songConnection.SongConnection.getconnetion;
+import static main.java.songConnection.SongConnection.getconnetion;
+//import static songConnection.SongConnection.getconnetion;
 public class ImplementOperation implements SongOperation
 {
     List<PodCast> podCastList = new ArrayList<>();
@@ -26,7 +32,7 @@ public class ImplementOperation implements SongOperation
 
         System.out.println("\n\n<<<<<<< *****   Welcome to PodcastList Song   **** >>>>>>");
 
-        SongConnection.getconnetion();
+        getconnetion();
         Statement statement = getconnetion().createStatement();
         ResultSet resu = statement.executeQuery("select * from Podcast");
 

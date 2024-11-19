@@ -1,6 +1,6 @@
 package main.java.songConnection;
 
-import SongDAOException.SongException;
+import main.java.SongDAOException.SongException;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
