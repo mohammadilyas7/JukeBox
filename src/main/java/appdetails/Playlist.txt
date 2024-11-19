@@ -1,0 +1,37 @@
+Home Page :
+	User Login
+	If login is success, the all songs and podcast should visible
+Task 1:
+
+    Retrieve all songs and filter by genre, artist, album and show result in sorted order
+Task 2:
+
+	Retrive all podcast and filter by celebrity and published date
+Task 3:
+
+a)Create a playlist -
+	i)can contain only songs.                    insertOnlySongsInPlayList()
+	ii)can contain only podcast.                 inserytOnlyPodcastInPlayList()
+	iii)can contain both song and podcast.       insertBothSongsInPlayList()
+
+1 user can have multiple playlist.
+1)Old songs
+2)90's songs
+3)Latest songs
+4)Wedding songs
+
+Backend : Mysql tables
+playlist     :  playlistId(pk-suto increment), playlistname,UserId(fk)
+playlistDetails : DetailId(pk)auto increment, playlistId(fk), songIdorpodcatId,Type(song/podcast/both)
+
+Enter your playlist name : old songs
+jdbc :
+	check whether that playlist already exists or not with respect to user.If exists, then put a msg"Plylist already exists with same name"
+else create the playlist and insert record in backend table.
+
+We have created playlist :
+We have to insert the songs in playlist
+
+Enter song id : 101
+First check whether song id exists in db or not ,if exists insert data in  playlistDetails else msg to user " song does not exist".
+Duplicate song should not be added in same playlist .Set interface of collections .
